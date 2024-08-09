@@ -11,4 +11,4 @@ for x in range(1, 5):
     if pr < mn:
         pr = mn
         nm = mnn
-print(f"Média {s / m} i nome do menor {mnn} i presso do menor {mn}")
+print(f"Média aritimética{s / m}, nome do remédio de menor preço {mnn} e preço do remédio {mn}")
