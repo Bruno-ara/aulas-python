@@ -1,14 +1,13 @@
-s = m = mn = pr = 0
-mnn = ""
-nm = input("noem: ")
-pr = float(input("preço: "))
-mn = pr
-for x in range(1, 5):
-    nm = input("noem: ")
-    pr = float(input("preço: "))
-    s += pr
-    m += 1
-    if pr < mn:
-        pr = mn
-        nm = mnn
-print(f"Média aritimética{s / m}, nome do remédio de menor preço {mnn} e preço do remédio {mn}")
+mb =""
+pm = float("inf")
+sp  = 0
+for x in range(5):
+    medicamento = input("Digite o nome do medicamente>:")
+    preco = float(input("Digeite o repço"))
+
+    if preco < pm:
+        pm = preco
+        mb = medicamento
+    sp += preco
+media = sp / 5
+print(f"nome: {mb}; preco {pm}; media {media}")
